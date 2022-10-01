@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    max-width: 1460px;
+    width: 90%;
+    margin: auto;
+}
+.box{
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    grid-auto-rows: minmax(100px auto);
+    grid-template-areas: 
+    "MASONRY1 responsive overlap overlap"
+    "MASONRY1 fluid explicitlyplaced negativespace"
+    "flexiblebreadth masonry2 explicitlyplaced masonry3"
+    "domorder masonry2 namedtracks namedtracks";
+}
+.part1{
+    grid-area:MASONRY1;
+    height: 300px;
+}
+.part2{
+    grid-area:responsive ;
+}
+.part3{
+    grid-area: overlap;
+    
+}
+.part4{
+    grid-area: fluid;
+}
+.part5{
+    grid-area: explicitlyplaced;
+}
+.part6{
+    grid-area: negativespace;
+}
+.part7{
+    grid-area: flexiblebreadth;
+}
+.part8{
+    grid-area: masonry2;
+}
+.part9{
+    grid-area: masonry3;
+}
+.part11{
+    grid-area: domorder;
+}
+.part12{
+    grid-area: namedtracks;
+}
+
+
